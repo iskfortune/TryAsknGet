@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Submit Provider Offer"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etOfferStoreName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Store or Business Name"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/etOfferPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Quoted Price (e.g., 2500.00)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etOfferDetails"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:hint="Offer details, stock availability, delivery/service terms..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnSubmitOffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Send Offer" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Post a Product or Service Inquiry"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etInquiryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="What are you looking for? (e.g., Reliable Plumber)"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etInquiryDescription"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:hint="Describe specifics, preferred location, or budget..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnSubmitInquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit Inquiry" />
+</LinearLayout>
